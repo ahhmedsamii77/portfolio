@@ -1,0 +1,115 @@
+.timeline { display: flex; flex-direction: column; }
+
+.timeline__item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.timeline__line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  padding-top: 26px;
+}
+
+.timeline__dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.timeline__track {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(to bottom, rgba(99,102,241,0.5), transparent);
+  margin-top: 8px;
+  min-height: 40px;
+}
+
+.timeline__content {
+  flex: 1;
+  padding: 24px 26px;
+  margin-bottom: 28px;
+}
+
+.exp__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.exp__role { font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px; }
+
+.exp__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.exp__company { color: var(--accent-indigo); font-weight: 600; }
+.exp__separator { color: var(--text-muted); }
+
+.exp__location { display: flex; align-items: center; gap: 4px; }
+
+.exp__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+  flex-shrink: 0;
+}
+
+.exp__period { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); white-space: nowrap; }
+
+.exp__type {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 11px;
+  border-radius: 50px;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.exp__points { list-style: none; display: flex; flex-direction: column; gap: 11px; }
+
+.exp__point {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.exp__bullet { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; margin-top: 7px; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .timeline__item { gap: 16px; }
+  .timeline__content { padding: 20px; }
+  .exp__role { font-size: 1.05rem; }
+}
+
+@media (max-width: 640px) {
+  .exp__top { flex-direction: column; gap: 10px; }
+  .exp__right { align-items: flex-start; flex-direction: row; flex-wrap: wrap; gap: 8px; }
+  .exp__meta { font-size: 0.8rem; }
+  .exp__point { font-size: 0.84rem; }
+}
+
+@media (max-width: 480px) {
+  .timeline__line { display: none; }
+  .timeline__item { gap: 0; }
+  .timeline__content { padding: 18px; margin-bottom: 16px; }
+  .exp__role { font-size: 1rem; }
+}
