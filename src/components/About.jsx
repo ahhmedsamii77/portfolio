@@ -58,7 +58,7 @@ export default function About() {
             </div>
 
             <a
-              href="https://drive.google.com/file/d/1VHDUTTH5DzWDmcr4KbJj1TIRHag9qrhf/view?usp=sharing"
+              href="https://drive.google.com/file/d/1utdoGeBQcp2j8ejNNiUi01b5OHFz58me/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="btn btn-cv about__cv-btn"

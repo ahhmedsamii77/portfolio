@@ -27,7 +27,7 @@ const contactLinks = [
     icon: (<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>),
     label: 'Download CV',
     value: 'View My Resume',
-    href: 'https://drive.google.com/file/d/1VHDUTTH5DzWDmcr4KbJj1TIRHag9qrhf/view?usp=sharing',
+    href: 'https://drive.google.com/file/d/1utdoGeBQcp2j8ejNNiUi01b5OHFz58me/view?usp=sharing',
     color: '#f59e0b',
   },
 ]
@@ -105,7 +105,7 @@ export default function Contact() {
                 Send Email
               </a>
               <a
-                href="https://drive.google.com/file/d/1VHDUTTH5DzWDmcr4KbJj1TIRHag9qrhf/view?usp=sharing"
+                href="https://drive.google.com/file/d/1utdoGeBQcp2j8ejNNiUi01b5OHFz58me/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-cv"
